@@ -268,7 +268,10 @@
               <strong data-module-screen-label>Orçamentos</strong>
             </div>
             <figure>
-              <img data-module-image src="assets/prints/01-novo-orcamento-editor.png" alt="Tela de novo orçamento do ObraFlux com dados do cliente e itens do orçamento">
+              <button class="module-zoom-trigger" type="button" data-open-module-zoom aria-label="Ampliar imagem do módulo">
+                <img data-module-image src="assets/prints/01-novo-orcamento-editor.png" alt="Tela de novo orçamento do ObraFlux com dados do cliente e itens do orçamento">
+                <span>Ampliar tela</span>
+              </button>
             </figure>
           </div>
         </div>
@@ -437,6 +440,21 @@
         </label>
         <button class="button primary submit-button" type="submit">Conversar no WhatsApp</button>
       </form>
+    </section>
+  </div>
+
+  <div class="image-zoom-backdrop" data-image-zoom hidden>
+    <section class="image-zoom-modal" role="dialog" aria-modal="true" aria-labelledby="image-zoom-title">
+      <div class="image-zoom-header">
+        <div>
+          <span>Visualização ampliada</span>
+          <h2 id="image-zoom-title" data-zoom-title>Orçamentos</h2>
+        </div>
+        <button class="icon-button" type="button" aria-label="Fechar visualização ampliada" data-close-image-zoom>×</button>
+      </div>
+      <figure>
+        <img data-zoom-image src="assets/prints/01-novo-orcamento-editor.png" alt="Tela de novo orçamento do ObraFlux com dados do cliente e itens do orçamento">
+      </figure>
     </section>
   </div>
 
