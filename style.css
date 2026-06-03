@@ -132,8 +132,8 @@ input {
   margin-inline: auto;
   min-height: calc(100vh - 74px);
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.92fr);
-  gap: clamp(34px, 6vw, 86px);
+  grid-template-columns: minmax(0, 0.92fr) minmax(520px, 1.08fr);
+  gap: clamp(28px, 4vw, 58px);
   align-items: center;
   padding: clamp(34px, 5vw, 76px) clamp(20px, 5vw, 72px) clamp(44px, 6vw, 70px);
   overflow: hidden;
@@ -297,12 +297,12 @@ h3 {
 .hero-visual {
   display: grid;
   place-items: center;
-  min-height: 560px;
+  min-height: 610px;
 }
 
 .hero-product-shot {
   position: relative;
-  width: min(100%, 640px);
+  width: min(100%, 760px);
   margin: 0;
   padding: clamp(8px, 1.4vw, 14px);
   border: 1px solid rgba(220, 230, 242, 0.92);
@@ -1488,7 +1488,7 @@ h3 {
   }
 
   .hero-product-shot {
-    width: min(100%, 860px);
+    width: min(100%, 940px);
   }
 
   .segments-grid {
