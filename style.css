@@ -675,9 +675,11 @@ section[id] {
 .segment.wide {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.25fr);
+  grid-template-columns: minmax(340px, 0.95fr) minmax(0, 1.05fr);
+  grid-template-rows: 1fr auto auto 1fr;
   align-items: center;
-  column-gap: clamp(24px, 4vw, 56px);
+  column-gap: clamp(28px, 5vw, 72px);
+  min-height: 330px;
   color: #fff;
   background:
     linear-gradient(135deg, rgba(21, 201, 156, 0.18), transparent 44%),
@@ -686,13 +688,15 @@ section[id] {
 
 .segment.wide .segment-visual {
   width: 100%;
-  max-width: 520px;
+  max-width: 610px;
+  grid-row: 1 / -1;
+  align-self: center;
   margin: 0;
   background: rgba(255, 255, 255, 0.08);
 }
 
 .segment.wide .segment-visual img {
-  height: 230px;
+  height: 280px;
   object-fit: contain;
 }
 
@@ -702,14 +706,16 @@ section[id] {
   color: #fff;
 }
 
-.segment.wide .segment-mark {
-  grid-column: 2;
-  color: var(--blue-950);
-  background: var(--green-500);
+.segment.wide h3 {
+  grid-row: 2;
+  align-self: end;
+  margin-bottom: 12px;
 }
 
-.segment.wide:hover .segment-mark {
-  background: #fff;
+.segment.wide p {
+  grid-row: 3;
+  align-self: start;
+  max-width: 640px;
 }
 
 .features-section {
@@ -1713,6 +1719,23 @@ section[id] {
   .segment.wide {
     grid-column: auto;
     display: flex;
+    min-height: 0;
+  }
+
+  .segment.wide .segment-visual,
+  .segment.wide h3,
+  .segment.wide p {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .segment.wide .segment-visual {
+    max-width: none;
+    margin: -6px -6px 18px;
+  }
+
+  .segment.wide .segment-visual img {
+    height: 220px;
   }
 
   .cta-section,
