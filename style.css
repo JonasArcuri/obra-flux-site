@@ -22,10 +22,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
   color: var(--ink);
   background:
     radial-gradient(circle at 10% 8%, rgba(21, 201, 156, 0.13), transparent 28%),
@@ -157,6 +160,7 @@ input {
 
 .hero-content {
   max-width: 790px;
+  min-width: 0;
 }
 
 .eyebrow {
@@ -525,6 +529,10 @@ h3 {
   width: min(100%, var(--page-max));
   margin-inline: auto;
   padding: clamp(62px, 9vw, 116px) clamp(20px, 5vw, 72px);
+}
+
+section[id] {
+  scroll-margin-top: 112px;
 }
 
 .section-heading {
@@ -1529,15 +1537,22 @@ h3 {
     padding: 18px 20px;
   }
 
+  section[id] {
+    scroll-margin-top: 18px;
+  }
+
   .nav {
     grid-column: 1 / -1;
     justify-content: flex-start;
     gap: 10px;
     font-size: 0.86rem;
+    min-width: 0;
+    max-width: 100%;
   }
 
   .nav a {
     flex: 0 0 auto;
+    min-width: 0;
   }
 
   .header-cta {
@@ -1549,6 +1564,11 @@ h3 {
   .hero {
     padding: 34px 20px 48px;
     overflow: hidden;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: calc(100vw - 40px);
   }
 
   .eyebrow {
@@ -1563,7 +1583,7 @@ h3 {
   }
 
   h1 {
-    max-width: 100%;
+    max-width: calc(100vw - 40px);
     font-size: clamp(2.85rem, 11vw, 3.6rem);
     line-height: 1.02;
     overflow-wrap: break-word;
@@ -1574,7 +1594,7 @@ h3 {
   }
 
   .hero-copy {
-    max-width: 100%;
+    max-width: calc(100vw - 40px);
     font-size: 1.08rem;
     overflow-wrap: break-word;
   }
@@ -1683,8 +1703,8 @@ h3 {
 
   .nav {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    width: 100%;
+    grid-template-columns: 1fr;
+    width: auto;
   }
 
   .nav a {
@@ -1697,6 +1717,7 @@ h3 {
     background: rgba(255, 255, 255, 0.72);
     font-size: 0.82rem;
     text-align: center;
+    overflow-wrap: anywhere;
   }
 
   .nav a::after {
@@ -1718,12 +1739,12 @@ h3 {
   }
 
   h1 {
-    font-size: clamp(2.35rem, 10.2vw, 3.05rem);
+    font-size: clamp(2.1rem, 9.2vw, 2.75rem);
     line-height: 1.05;
   }
 
   .hero-copy {
-    font-size: 1rem;
+    font-size: 0.98rem;
   }
 
   .button {
@@ -1750,11 +1771,7 @@ h3 {
 
 @media (max-width: 380px) {
   h1 {
-    font-size: 2.15rem;
-  }
-
-  .nav {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    font-size: 2rem;
   }
 }
 
