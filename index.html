@@ -225,151 +225,67 @@
         </p>
       </div>
 
-      <div class="module-showcase">
-        <article class="module-card module-card-large">
-          <div class="module-copy">
-            <span>Orçamentos</span>
-            <h3>Monte propostas com itens, áreas, materiais e mão de obra</h3>
-            <p>
-              O módulo de orçamento centraliza dados do cliente, endereço, validade e composição do serviço para chegar ao total com mais segurança. Envie o PDF do orçamento diretamente ao cliente, formatado em modo retrato ou paisagem.
-            </p>
-          </div>
-          <figure>
-            <img src="assets/prints/01-novo-orcamento-editor.png" alt="Tela de novo orçamento do ObraFlux com dados do cliente e itens do orçamento">
-          </figure>
-        </article>
+      <div class="module-lab" data-module-lab>
+        <div class="module-tabs" role="tablist" aria-label="Escolha um módulo do ObraFlux">
+          <button class="module-tab is-active" type="button" data-module-key="orcamentos">
+            <span>01</span>
+            <strong>Orçamentos</strong>
+            <small>Propostas prontas para enviar</small>
+          </button>
+          <button class="module-tab" type="button" data-module-key="obras">
+            <span>02</span>
+            <strong>Obras</strong>
+            <small>Frentes, status e responsáveis</small>
+          </button>
+          <button class="module-tab" type="button" data-module-key="agenda">
+            <span>03</span>
+            <strong>Agenda</strong>
+            <small>Equipe e compromissos em campo</small>
+          </button>
+          <button class="module-tab" type="button" data-module-key="insumos">
+            <span>04</span>
+            <strong>Insumos</strong>
+            <small>Custos, comprovantes e controle</small>
+          </button>
+          <button class="module-tab" type="button" data-module-key="relatorios">
+            <span>05</span>
+            <strong>Relatórios</strong>
+            <small>Execução registrada por obra</small>
+          </button>
+          <button class="module-tab" type="button" data-module-key="financeiro">
+            <span>06</span>
+            <strong>Financeiro</strong>
+            <small>Entradas, saídas e comparativos</small>
+          </button>
+        </div>
 
-        <article class="module-card">
-          <figure>
-            <img src="assets/prints/05-calendario-agendamentos.png" alt="Calendário de agendamentos do ObraFlux com compromissos por dia">
-          </figure>
-          <div class="module-copy">
-            <span>Agenda e equipe</span>
-            <h3>Agendamentos visíveis por mês</h3>
-            <p>Organize visitas, entregas, compras e compromissos da equipe em uma visão simples de calendário.</p>
+        <div class="module-stage">
+          <div class="module-screen">
+            <div class="module-screen-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+              <strong data-module-screen-label>Orçamentos</strong>
+            </div>
+            <figure>
+              <img data-module-image src="assets/prints/01-novo-orcamento-editor.png" alt="Tela de novo orçamento do ObraFlux com dados do cliente e itens do orçamento">
+            </figure>
           </div>
-        </article>
+        </div>
 
-        <article class="module-card">
-          <figure>
-            <img src="assets/prints/09-obras-lista.png" alt="Lista de obras do ObraFlux com status, cliente, responsável e endereço">
-          </figure>
-          <div class="module-copy">
-            <span>Obras</span>
-            <h3>Controle das frentes em andamento</h3>
-            <p>Acompanhe obras por status, cliente, responsável, endereço e data de início, mantendo cada frente bem localizada.</p>
-          </div>
-        </article>
-
-        <article class="module-card">
-          <figure>
-            <img src="assets/prints/08-insumos-despesas.png" alt="Tela de insumos e despesas do ObraFlux com filtros e lançamentos por valor">
-          </figure>
-          <div class="module-copy">
-            <span>Insumos e despesas</span>
-            <h3>Custos registrados por tipo, mês e responsável</h3>
-            <p>Registre materiais, alimentação, transporte, equipamentos e outros custos ligados à execução dos serviços. É possível enviar fotos de comprovantes, mantendo o controle e armazenamento desses dados para consulta posterior.</p>
-          </div>
-        </article>
-
-        <article class="module-card">
-          <figure>
-            <img src="assets/prints/11-fluxo-financeiro-dashboard.png" alt="Dashboard financeiro do ObraFlux com entradas, saídas, saldo e gráficos">
-          </figure>
-          <div class="module-copy">
-            <span>Fluxo financeiro</span>
-            <h3>Visão financeira da operação</h3>
-            <p>Veja entradas, saídas, saldo do mês, custos por insumos e relatórios de cobrança em painéis comparativos.</p>
-          </div>
-        </article>
-
-        <article class="module-card">
-          <figure>
-            <img src="assets/prints/00-login-obraflux.png" alt="Tela de login do ObraFlux">
-          </figure>
-          <div class="module-copy">
-            <span>Acesso</span>
-            <h3>Entrada segura para a operação</h3>
-            <p>Tela de acesso dedicada para a equipe entrar no ambiente da empresa e trabalhar com os dados centralizados.</p>
-          </div>
-        </article>
-
-        <article class="module-card">
-          <figure>
-            <img src="assets/prints/02-orcamento-itens-e-totais.png" alt="Tela de orçamento do ObraFlux com itens e totais calculados">
-          </figure>
-          <div class="module-copy">
-            <span>Orçamentos</span>
-            <h3>Itens e totais no mesmo lugar</h3>
-            <p>Acompanhe materiais, mão de obra e valores finais para fechar propostas com composição mais clara.</p>
-          </div>
-        </article>
-
-        <article class="module-card">
-          <figure>
-            <img src="assets/prints/03-historico-orcamentos.png" alt="Histórico de orçamentos do ObraFlux com filtros e status">
-          </figure>
-          <div class="module-copy">
-            <span>Histórico</span>
-            <h3>Orçamentos registrados e fáceis de consultar</h3>
-            <p>Consulte propostas anteriores, status, clientes e valores para retomar negociações sem perder contexto.</p>
-          </div>
-        </article>
-
-        <article class="module-card">
-          <figure>
-            <img src="assets/prints/04-historico-relatorios-cobranca.png" alt="Histórico de relatórios de cobrança no ObraFlux">
-          </figure>
-          <div class="module-copy">
-            <span>Cobrança</span>
-            <h3>Relatórios de cobrança organizados</h3>
-            <p>Controle medições e cobranças vinculadas aos serviços para acompanhar o que já foi enviado ao cliente.</p>
-          </div>
-        </article>
-
-        <article class="module-card">
-          <figure>
-            <img src="assets/prints/06-funcionarios.png" alt="Tela de funcionários do ObraFlux com lista de equipe">
-          </figure>
-          <div class="module-copy">
-            <span>Funcionários</span>
-            <h3>Equipe cadastrada e disponível para alocação</h3>
-            <p>Mantenha os dados dos responsáveis organizados para relacionar pessoas a obras, relatórios e despesas.</p>
-          </div>
-        </article>
-
-        <article class="module-card">
-          <figure>
-            <img src="assets/prints/07-relatorios-obra.png" alt="Tela de relatórios de obra do ObraFlux">
-          </figure>
-          <div class="module-copy">
-            <span>Relatórios de obra</span>
-            <h3>Registros da execução por serviço</h3>
-            <p>Documente atividades, avanços e informações relevantes para manter histórico confiável de cada obra.</p>
-          </div>
-        </article>
-
-        <article class="module-card">
-          <figure>
-            <img src="assets/prints/10-obra-detalhe-resumo.png" alt="Resumo detalhado de uma obra no ObraFlux">
-          </figure>
-          <div class="module-copy">
-            <span>Detalhe da obra</span>
-            <h3>Resumo completo de cada frente</h3>
-            <p>Veja orçamentos atrelados, cronograma, rendimento registrado e total orçado em uma visão de acompanhamento.</p>
-          </div>
-        </article>
-
-        <article class="module-card">
-          <figure>
-            <img src="assets/prints/12-fluxo-financeiro-tabelas.png" alt="Tabelas do fluxo financeiro do ObraFlux com comparativo mensal">
-          </figure>
-          <div class="module-copy">
-            <span>Comparativos</span>
-            <h3>Tabelas para analisar o mês</h3>
-            <p>Compare entradas, saídas e variações financeiras, gere PDFs dos relatórios mensais com comparativos de outros meses e planeje sua gestão de forma mais eficiente.</p>
-          </div>
-        </article>
+        <aside class="module-panel" aria-live="polite">
+          <span data-module-category>Orçamentos</span>
+          <h3 data-module-title>Monte propostas com itens, áreas, materiais e mão de obra</h3>
+          <p data-module-description>
+            Centralize dados do cliente, endereço, validade e composição do serviço para chegar ao total com mais segurança.
+          </p>
+          <ul data-module-points>
+            <li>Envie o PDF do orçamento diretamente ao cliente.</li>
+            <li>Escolha o formato em modo retrato ou paisagem.</li>
+            <li>Mantenha materiais, mão de obra e totais no mesmo fluxo.</li>
+          </ul>
+          <button class="button primary" type="button" data-open-lead-modal>Solicitar apresentação</button>
+        </aside>
       </div>
     </section>
 
