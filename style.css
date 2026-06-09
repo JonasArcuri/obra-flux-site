@@ -1298,13 +1298,18 @@ section[id] {
   text-align: center;
 }
 
+.footer-legal {
+  display: grid;
+  gap: 4px;
+}
+
 .site-footer img {
   width: 34px;
   height: 34px;
   object-fit: contain;
 }
 
-.site-footer p {
+.footer-legal p {
   margin: 0;
 }
 
